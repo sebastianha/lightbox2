@@ -154,7 +154,7 @@
 
     function addToAlbum($link) {
       self.album.push({
-        link: $link.attr('href'),
+        link: $link.attr('data-base64') || $link.attr('href'),
         title: $link.attr('data-title') || $link.attr('title')
       });
     }
